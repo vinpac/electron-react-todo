@@ -1,0 +1,106 @@
+$note-spacer-y: .75rem;
+$note-spacer-x: .75rem;
+$note-checklist-spacer-y: .5rem;
+$note-checklist-spacer-x: .45rem;
+
+.note {
+  margin-bottom: $note-spacer-y;
+  background: rgba(#000, .2);
+  border-radius: 3px;
+}
+
+.note-card {
+  background: #E3E4E6;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 1.4;
+  box-shadow: 0 1px rgba(#000, .1);
+}
+
+.note-header {
+  padding: $note-spacer-y $note-spacer-x 0;
+  cursor: pointer;
+
+  .note-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    user-select: none;
+  }
+}
+
+.note-block {
+  padding: $note-spacer-y $note-spacer-x;
+}
+
+.note-text {
+  margin-bottom: 0;
+}
+
+.note-block-checklist {
+  padding: 0 .4rem;
+}
+
+.note-checklist-item {
+  cursor: pointer;
+  padding-left: $input-checkbox-size + .4rem;
+
+  &:hover {
+    background: rgba(#000, .05);
+  }
+}
+
+.note-checklist-item-content {
+  padding: $note-checklist-spacer-x .75rem;
+}
+
+.note-checkbox {
+  float: left;
+  margin-left: ($input-checkbox-size) * -1;
+  margin-top: .35rem;
+}
+
+.note-checklist-composer {
+  padding-left: $input-checkbox-size + $note-checklist-spacer-x * 2;
+  padding-bottom: $note-checklist-spacer-y;
+
+  > input {
+    border-color: transparent;
+    background: none;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:focus {
+      background: #fff;
+      cursor: text;
+    }
+  }
+}
+
+.note-checklist-progress {
+  position: relative;
+  padding-left: $input-checkbox-size + $note-checklist-spacer-x * 2;
+}
+
+.note-progress-value {
+  float: left;
+  font-size: 13px;
+  color: #666;
+  position: absolute;
+  left: 0;
+  top: -4px;
+  bottom: 0;
+}
+
+.note-progress-bar {
+  height: 8px;
+  background: rgba(#000, .05);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.note-progress-bar-value {
+  background: #689F39;
+  width: 50%;
+  height: 100%;
+}
