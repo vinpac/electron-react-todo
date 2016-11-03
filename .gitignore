@@ -1,3 +1,4 @@
 node_modules
 .build
 .simple-import.json
+yarn-error.log
